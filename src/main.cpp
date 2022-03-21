@@ -4,6 +4,9 @@
 #include "activity3.h"
 #include "activity4.h"
 #include "activity5.h"
+#include "activity6.h"
+#include "activity10.h"
+#include "activity11.h"
 using namespace std;
 
 int main() 
@@ -52,7 +55,7 @@ int main()
             activity5Solution();
             break;
         case 6:
-            cout << "Option " << "6"<< endl;
+            activity6Solution();
             break;
         case 7:
             cout << "Option " << "7"<< endl;
@@ -64,10 +67,10 @@ int main()
             cout << "Option " << "9"<< endl;
             break;
         case 10:
-            cout << "Option " << "10"<< endl;
+            cout << activity10Solution();
             break;
         case 11:
-            cout << "Option " << "11"<< endl;
+            cout << activity11Solution();
             break;
         case 12:
             cout << "Option " << "12"<< endl;

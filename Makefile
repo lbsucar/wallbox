@@ -25,7 +25,7 @@ g++ -o main main.cpp ../libs/image-pgm/imagennew.a
 all: release2
 	 
 release2:
-	g++ src/date.cpp src/file.cpp src/activity1.cpp src/activity3.cpp src/activity4.cpp src/activity5.cpp src/main.cpp -lboost_date_time -o main 
+	g++ src/date.cpp src/file.cpp src/activity1.cpp src/activity3.cpp src/activity4.cpp src/activity5.cpp src/activity6.cpp src/activity10.cpp src/activity11.cpp src/main.cpp -lboost_date_time -o main 
 
 #main.o \
 	$(CC) main.o  -o main\

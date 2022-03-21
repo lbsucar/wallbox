@@ -1,9 +1,12 @@
 #include <iostream>
-#include "activity1.h"
+#include <stdio.h>      /* printf, scanf, puts, NULL */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>  
+#include "activity6.h"
 using namespace std;
 
 
-int activity1Solution() 
+int activity6Solution() 
 {
 /*
 => ERROR [5/5] RUN make all                                                                                 1.8s
@@ -19,11 +22,31 @@ int activity1Solution()
 ------
 Explanation:
 The compiler can not solve the dependencies so we have to set that the heritance cames from a virtual struct 
-*/
-    Plane plane;
-    Vehicle& v = plane;
-    
-    v.Move();
-    cout << "Hello Cruel World!\n";
+*/int iSecret, iGuess;
+int last =-1;
+int launches=0;
+int launches4;
+bool bingo=false;
+srand (time(NULL));
+while(!bingo){
+    launches++;
+    iSecret = rand() % 2; 
+    if(last < 0){
+        last = iSecret;
+        launches4++;
+    }
+    else if( last != iSecret)
+    {
+        launches4++;
+    }
+    else
+        launches4=1;
+    if(launches4==4)
+        bingo=true;
+}
+cout<<"Se ha necesitado " << launches<< endl;
+
+
+
     return 0;
 }
