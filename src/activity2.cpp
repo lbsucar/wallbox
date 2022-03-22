@@ -20,6 +20,10 @@ int activity1Solution()
 Explanation:
 The compiler can not solve the dependencies so we have to set that the heritance cames from a virtual struct 
 */
+The memory direction is going to be to 00000... on all the car pointer.
+Is more mintenable to define a constructor something like this:
+ev_t() : id(0) ...
+whith the values of each atribute to 0.
     Plane plane;
     Vehicle& v = plane;
     
