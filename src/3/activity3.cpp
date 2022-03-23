@@ -1,30 +1,19 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-
+#include "../../include/3/activity3.h"
 using namespace std;
 
-struct OrderedPair {
-    int x;
-    int y;
-};
 
-bool isOrederedPair (int x, int y, int P, int O, int A, int B);
-
-auto main() -> int 
+int activity3Solution()
 {
-    int O,P,A,B;
+    int O,P,A,B,max_Value;
     vector <OrderedPair> vectOP;
     vector <int> vectX;
     vector <int> vectY;
 
-    for (int i=0; i < 10; ++i)
-    {   
-        vectX.push_back(i);
-        vectY.push_back(i);
-    }
-    
-    cout << "Introduzca valores:" << endl;
+    max_Value = 0;
+    cout << "Set Values:" << endl;
     cout << "O : ";
     cin >> O;
     cout << "P : ";
@@ -33,7 +22,16 @@ auto main() -> int
     cin >> A;
     cout << "B : ";
     cin >> B;
+    cout << "Maximun value for x and y: ";
+    cin >> max_Value;
     
+
+    for (int i=0; i <= max_Value; ++i)
+    {   
+        vectX.push_back(i);
+        vectY.push_back(i);
+    }
+
     for (auto x : vectX)
     {
         for (auto y : vectY)
@@ -47,18 +45,22 @@ auto main() -> int
             }
         }
     }
+
+    cout << "Valid Pairs:" << endl;
+
+    for (OrderedPair i: vectOP)
+        std::cout << i.x << ' ' << i.y << endl;
+
     return 0;
 }
 
 bool isOrederedPair (int x, int y, int P, int O, int A, int B){
-    if((x+y)/A && (x+y)/B && (1<=x<=O) && (1<=y<=P))
+    if(((x+y)%A) == 0 
+        && ((x+y)%B) == 0 
+        && (1<=x) 
+        && (x<=O) 
+        && (1<=y) 
+        && (y<=P))
     {return true;}
     return false;
-} 
-
-/*
-nums = range(2, 100)
-for i in range(2, 10):
-    nums = filter(lambda x: x == i or x % i, nums)
-print nums
-*/
+}

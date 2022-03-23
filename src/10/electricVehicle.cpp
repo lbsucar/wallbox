@@ -2,10 +2,10 @@
 #include <iomanip>
 #include <string>
 #include <ctime>
-#include "file.h"
+#include "../../include/10/electricVehicle.h"
 using namespace std;
 
-    File::File( boost::gregorian::date date, string owner, char ownerRights, char groupRights, char othersRights, long long int size, string name)
+    ElectricVehicle::ElectricVehicle( boost::gregorian::date date, string owner, char ownerRights, char groupRights, char othersRights, long long int size, string name)
     {
         this->setDate(date);
         this->setGroupRights(groupRights);
@@ -17,7 +17,7 @@ using namespace std;
         this->setName(name);
     }
     
-    File::File()
+    ElectricVehicle::ElectricVehicle()
     {boost::gregorian::date date(1401, 12, 19);
         this->setDate(date);
     }

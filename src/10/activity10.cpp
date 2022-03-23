@@ -1,8 +1,8 @@
 #include <iostream>
-#include "activity10.h"
 #include <algorithm>
 #include <functional>
 #include <vector>
+#include "../../include/10/activity10.h"
 using namespace std;
 
 

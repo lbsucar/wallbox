@@ -1,12 +1,12 @@
 #include <iostream>
 #include <iomanip>
-#include "activity1.h"
-#include "activity3.h"
-#include "activity4.h"
-#include "activity5.h"
-#include "activity6.h"
-#include "activity10.h"
-#include "activity11.h"
+#include "../include/1/activity1.h"
+#include "../include/3/activity3.h"
+#include "../include/4/activity4.h"
+#include "../include/5/activity5.h"
+#include "../include/6/activity6.h"
+#include "../include/10/activity10.h"
+#include "../include/11/activity11.h"
 using namespace std;
 
 int main() 

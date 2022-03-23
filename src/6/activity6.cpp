@@ -1,9 +1,12 @@
 #include <iostream>
-#include "activity1.h"
+#include <stdio.h>      /* printf, scanf, puts, NULL */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>  
+#include "../../include/6/activity6.h"
 using namespace std;
 
 
-int activity1Solution() 
+int activity6Solution() 
 {
 /*
 => ERROR [5/5] RUN make all                                                                                 1.8s
@@ -19,15 +22,31 @@ int activity1Solution()
 ------
 Explanation:
 The compiler can not solve the dependencies so we have to set that the heritance cames from a virtual struct 
-*/
-The memory direction is going to be to 00000... on all the car pointer.
-Is more mintenable to define a constructor something like this:
-ev_t() : id(0) ...
-whith the values of each atribute to 0.
-    Plane plane;
-    Vehicle& v = plane;
-    
-    v.Move();
-    cout << "Hello Cruel World!\n";
+*/int iSecret, iGuess;
+int last =-1;
+int launches=0;
+int launches4;
+bool bingo=false;
+srand (time(NULL));
+while(!bingo){
+    launches++;
+    iSecret = rand() % 2; 
+    if(last < 0){
+        last = iSecret;
+        launches4++;
+    }
+    else if( last != iSecret)
+    {
+        launches4++;
+    }
+    else
+        launches4=1;
+    if(launches4==4)
+        bingo=true;
+}
+cout<<"Se ha necesitado " << launches<< endl;
+
+
+
     return 0;
 }

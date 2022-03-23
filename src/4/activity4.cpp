@@ -1,8 +1,8 @@
 #include <iostream>
 #include <algorithm>
-
+#include "../../include/4/activity4.h"
 using namespace std;
-#include "activity4.h"
+
 
 int activity4Solution()
 {
