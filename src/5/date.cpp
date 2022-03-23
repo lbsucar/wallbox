@@ -14,4 +14,3 @@ Date::Date(short unsigned int year, short unsigned int month, short unsigned int
 {
     setDate(year, month, day);
 }
-

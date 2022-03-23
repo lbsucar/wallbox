@@ -1,4 +1,4 @@
-#ifndef FILE_H    // To make sure you don't declare the function more than once by including the header multiple times.
+#ifndef FILE_H // To make sure you don't declare the function more than once by including the header multiple times.
 #define FILE_H
 #include <iostream>
 #include <iomanip>
@@ -20,16 +20,16 @@ private:
     string name;
 
 public:
-    File( boost::gregorian::date date, string owner, char ownerRights, char groupRights, char othersRights, long long int size, string name);
+    File(boost::gregorian::date date, string owner, char ownerRights, char groupRights, char othersRights, long long int size, string name);
     File();
     boost::gregorian::date getDate()
     {
         return dateFile;
     }
-  
+
     void setDate(boost::gregorian::date dateFile)
     {
-        this->dateFile=dateFile;
+        this->dateFile = dateFile;
     }
 
     string getOwner()
@@ -91,10 +91,6 @@ public:
     {
         this->size = size;
     }
-
-
-
-    
 };
 
 #endif

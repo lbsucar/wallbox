@@ -27,34 +27,24 @@ RUN apt-get update &&\
         valgrind \
         locales \
         cmake \
-        locales-all &&\
+        locales-all \
+        libgtest-dev &&\
     apt-get clean
 
 
+RUN cd /usr/src/gtest &&\
+    cmake CMakeLists.txt &&\
+    make &&\    
+    cp *.a /usr/lib
+ 
 WORKDIR /usr/src/
 # Copy the current folder which contains C++ source code to the Docker image under /usr/src
 COPY . /usr/src/
-# Install CMake
-RUN make all
 
+RUN cd build &&\
+    cmake .. -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" &&\
+    make all &&\
+    cd test &&\
+    ./WallboxTechnicalTest_tst
 
-
-
-
-
-
-
-
-#WORKDIR /TestCode
-
-#COPY . TestCode/
-# Use GCC to compile the Test.cpp source file
-
-#RUN ls -la /usr/src/*
-
-# Run the program output from the previous step
-#CMD ["./main"]
-#RUN cd test
-
-
-#CMD ["./secuencial"]
+WORKDIR /usr/src/build

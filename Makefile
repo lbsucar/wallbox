@@ -21,7 +21,12 @@ gcc -w -c imagennew.c -o imagennew.o \
 ar ruv imagennew.a imagennew.o \
 ranlib imagennew.a \
 g++ -o main main.cpp ../libs/image-pgm/imagennew.a 
+test:releasetest
 
+releasetest:
+	g++ -std=c++11 -isystem ~/build/googletest/ -pthread test/tests.cpp ../lib/libgtest.a -o my_googletest
+
+#googletest11 ./test/test_main.cpp ./src/4/activity4.cpp ./test/4/ac4test1.cpp
 all: release2
 	 
 release2:
