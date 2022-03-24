@@ -1,26 +1,28 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
 #include <iostream>
 #include <vector>
-#include "../../include/5/date.h"
 #include "../../include/5/file.h"
 #include "../../include/5/activity5.h"
 
 using namespace std;
 
-int activity5Solution()
+string activity5Solution()
 {
     vector<File> files;
     File selectedFile;
     string ds("2002/1/25");
-
+    string resultFile;
     boost::gregorian::date selectedDate(3000, 12, 18);
     // boost::gregorian::date date2(2014, 12, 19);
     fillFileVector(files);
     for (File i : files)
     {
-
         if (i.getOwner() == "admin" && (i.getName().substr((i.getName().size()) - 4, 4)) == ".exe")
         {
-
             if (i.getDate() < selectedDate)
             {
                 selectedFile = i;
@@ -30,20 +32,18 @@ int activity5Solution()
     }
     if (selectedDate.year() == 3000)
     {
-        cout << "NO FILES";
+        resultFile = "NO FILES";
     }
     else
     {
-
-        cout << selectedFile.getName();
+        resultFile = selectedFile.getName();
     }
 
-    return 0;
+    return resultFile;
 }
 
 void fillFileVector(vector<File> &newMyFile)
 {
-    cout << "HOLA CARACOLA" << endl;
     boost::gregorian::date date1(2003, 6, 23);
     cout << date1.year() << '\n';
     cout << date1.month() << '\n';

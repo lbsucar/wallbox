@@ -1,0 +1,22 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+Activity 9
+==========
+The use of the standard library is always a win win because it solves small problems to the developer.
+This solutions prevent the developer of adquiring technical debt and also makes the software more reliable.
+Also we have to remember the advantages of productivity.
+
+Also a great practice is the use of boost libraries, but I only recommend them when they acquire a status of maturity.
+
+In std we have:
+Containers: Allow to contain objects and data.
+Iterators: They allow to recover data from the containers.
+Algorithms: Helps us working with the data from the containers or variables.
+Functors: Are an object class that works as functions.
+Utilities: Small functions that solves small problems.
+Adaptors: Helps us making easy to manipulate on kind of data to another.
+Allocators: Allow the memory allocation to be easy. So we can allocate resources for new objects.
+Polymorphic allocators: Help also with the memory resources in case we need it to be more dynamic using pure virtual methods.

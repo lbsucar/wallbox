@@ -1,8 +1,12 @@
-#ifndef ACTIVITY10_H // To make sure you don't declare the function more than once by including the header multiple times.
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+#ifndef ACTIVITY10_H
 #define ACTIVITY10_H
 #include <iostream>
 #include <iomanip>
-#include "../include/boost/date_time/gregorian/greg_date.hpp"
 #include "electricVehicle.h"
 using namespace std;
 

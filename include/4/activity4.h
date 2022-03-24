@@ -1,4 +1,9 @@
-#ifndef ACTIVITY4_H // To make sure you don't declare the function more than once by including the header multiple times.
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+#ifndef ACTIVITY4_H 
 #define ACTIVITY4_H
 #include "iostream"
 #include "iomanip"

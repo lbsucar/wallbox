@@ -1,4 +1,9 @@
-#ifndef ACTIVITY3_H // To make sure you don't declare the function more than once by including the header multiple times.
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+#ifndef ACTIVITY3_H
 #define ACTIVITY3_H
 #include "iostream"
 #include "iomanip"
@@ -10,7 +15,7 @@ struct OrderedPair
     int y;
 };
 
-int activity3Solution();
+void activity3Solution();
 bool isOrederedPair(int x, int y, int P, int O, int A, int B);
 
 #endif

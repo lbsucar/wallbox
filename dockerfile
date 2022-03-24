@@ -1,3 +1,9 @@
+#/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+# * Unauthorized copying of this file, via any medium is strictly prohibited
+# * Proprietary and confidential
+# * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+# */
+
 # Get the GCC preinstalled image from Docker Hub
 #FROM gcc:6.3
 #RUN sudo apt-get -y install libc6-dbg gdb valgrind

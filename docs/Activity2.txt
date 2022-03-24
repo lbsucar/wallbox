@@ -1,0 +1,11 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+Activity 2
+==========
+
+Instead of using the memset I will refer to work with a constructor.
+In any case if it is needed the compiler will use memset if it considers it is necessary.
+Also we have to remember that the use of the constructor will help on saving resources.

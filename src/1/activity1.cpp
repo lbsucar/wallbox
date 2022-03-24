@@ -23,6 +23,6 @@ int activity1Solution()
     Vehicle &v = plane;
 
     v.Move();
-    cout << "Hello Cruel World!\n";
+   
     return 0;
 }

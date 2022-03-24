@@ -1,0 +1,15 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+Activity8
+=========
+
+Through a series of interfaces, the necessary objects that have acceptance methods are arranged.
+These will receive objects, which can be extended by polymorphisms.
+These accept methods control whether new visiting objects are accepted and will work with them accordingly.
+
+Working with patterns should be mandatory. It allow to align the solutions developed by a team. 
+And also creates moore value to the product from the point of view from the architecture perspective.
+Also it is very helpful for the QA and DevOps professionals so they can start developing their solutions.

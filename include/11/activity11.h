@@ -1,13 +1,15 @@
-#ifndef ACTIVITY11_H // To make sure you don't declare the function more than once by including the header multiple times.
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
+#ifndef ACTIVITY11_H
 #define ACTIVITY11_H
-#include "iostream"
-#include "iomanip"
+#include <iostream>
+#include <iomanip>
+#include <vector>
 using namespace std;
 
-/**
- * @brief   Solves the ACtivity one
- *
- */
 int activity11Solution();
 
 #endif

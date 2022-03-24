@@ -1,10 +1,15 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
 #include <iostream>
 #include <algorithm>
 #include <vector>
 #include "../../include/3/activity3.h"
 using namespace std;
 
-int activity3Solution()
+void activity3Solution()
 {
     int O, P, A, B, max_Value;
     vector<OrderedPair> vectOP;
@@ -49,7 +54,6 @@ int activity3Solution()
     for (OrderedPair i : vectOP)
         std::cout << i.x << ' ' << i.y << endl;
 
-    return 0;
 }
 
 bool isOrederedPair(int x, int y, int P, int O, int A, int B)

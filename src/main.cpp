@@ -1,3 +1,8 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
 #include <iostream>
 #include <iomanip>
 #include "../include/1/activity1.h"
@@ -16,13 +21,14 @@ int main()
     do
     {
         option = -1;
-        cout << "Hello Cruel World!\n"
+        cout << "Hello Wallbox!\n"
              << endl;
         cout << "=======================" << endl;
         cout << "Technical Test WallBox" << endl;
         cout << "=======================" << endl;
         cout << endl;
         cout << "Choose an option: (select a number option and press enter)" << endl;
+        cout << "Select a 0 to exit" << endl << endl;
         cout << " (1) Activity 1 : " << endl;
         cout << " (2) Activity 2 : " << endl;
         cout << " (3) Activity 3 : " << endl;
@@ -49,13 +55,13 @@ int main()
                  << "2" << endl;
             break;
         case 3:
-            cout << activity3Solution();
+            activity3Solution();
             break;
         case 4:
             cout << activity4Solution(1000);
             break;
         case 5:
-            activity5Solution();
+            cout << activity5Solution();
             break;
         case 6:
             activity6Solution();
@@ -76,7 +82,7 @@ int main()
             cout << activity10Solution();
             break;
         case 11:
-            cout << activity11Solution();
+            activity11Solution();
             break;
         case 12:
             cout << "Option "
@@ -89,6 +95,6 @@ int main()
         default:
             break;
         }
-    } while (option <= 0 || option >= 14);
+    } while (option != 0);
     return 0;
 }

@@ -1,3 +1,8 @@
+/* Copyright (C) Luis Beltran Sucar Segarra - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Luis Sucar <luis.sucar@gmail.com>, March 2022
+ */
 #include <iostream>
 #include <vector>
 #include "../../include/11/activity11.h"
@@ -14,6 +19,7 @@ int activity11Solution()
         else if (i > 600)
             v2.push_back(i / 4);
     }
-
+    for (const auto& i: v2)
+        std::cout << i << ' ';
     return 0;
 }
