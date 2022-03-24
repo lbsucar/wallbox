@@ -18,12 +18,6 @@ COLDFLAGS=-w -c
 AR=ar ruv
 RANLIB=ranlib
 
-#cd libs/ \
- cd image-pgm/ \
-gcc -w -c imagennew.c -o imagennew.o \
-ar ruv imagennew.a imagennew.o \
-ranlib imagennew.a \
-g++ -o main main.cpp ../libs/image-pgm/imagennew.a 
 test:releasetest
 
 releasetest:
@@ -35,17 +29,4 @@ all: release2
 release2:
 	g++ src/5/date.cpp src/5/file.cpp src/1/activity1.cpp src/3/activity3.cpp src/4/activity4.cpp src/5/activity5.cpp src/6/activity6.cpp src/10/activity10.cpp src/11/activity11.cpp src/main.cpp -lboost_date_time -o main 
 
-#main.o \
-	$(CC) main.o  -o main\
-	 \
-main.o: src/main.cpp\
-	$(CC) $(CFLAGS) src/main.cpp\
-	 \
-secuencial.o: secuencial.cpp\
-	$(CC) $(CFLAGS) secuencial.cpp\
-	 \
-clean:\
-	rm *o proyectoSencilloTesis\
-\
-mainlib:\
-	gcc -w -c imagennew.c -o imagennew.o\ 
+
